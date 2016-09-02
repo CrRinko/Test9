@@ -11,12 +11,12 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button button=(Button)findViewById(R.id.buttonReturn);
+        setContentView(R.layout.activity_main2);
+        Button button = (Button) findViewById(R.id.buttonReturn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( Main2Activity.this, Main2Activity.class);
+                Intent intent = new Intent(Main2Activity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
